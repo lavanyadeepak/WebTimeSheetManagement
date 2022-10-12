@@ -32,8 +32,8 @@ namespace WebTimeSheetManagement.Service
                 {
                     connection.Open();         
                     using (command = new SqlCommand(@"  
-    SELECT [NotificationsID],[Status],[Message]FROM [TimesheetDB].[dbo].[NotificationsTB]
-  where [TimesheetDB].[dbo].[NotificationsTB].Status ='A' 
+    SELECT [NotificationsID],[Status],[Message]FROM [dbo].[NotificationsTB]
+  where [dbo].[NotificationsTB].Status ='A' 
   and GETDATE() between FromDate and ToDate", connection))
                     {
                         command.Notification = null;
