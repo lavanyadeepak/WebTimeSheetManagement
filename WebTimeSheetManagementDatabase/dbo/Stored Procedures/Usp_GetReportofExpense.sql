@@ -23,7 +23,7 @@ SELECT
       ,[Miscellaneous]    
       ,[TotalAmount]    
       ,ex.CreatedOn        
-  FROM [TimesheetDB].[dbo].[Expense] ex    
+  FROM [dbo].[Expense] ex    
   inner join Registration Reg on reg.RegistrationID = ex.UserID    
   inner join ProjectMaster PM on ex.ProjectID =PM.ProjectID 
   inner join AssignedRoles AR on reg.RegistrationID = AR.RegistrationID   

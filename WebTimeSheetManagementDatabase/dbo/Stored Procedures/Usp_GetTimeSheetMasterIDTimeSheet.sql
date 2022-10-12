@@ -7,6 +7,6 @@ begin
   
 
 SELECT [TimeSheetMasterID]  
-FROM [TimesheetDB].[dbo].[TimeSheetMaster]  
+FROM [dbo].[TimeSheetMaster]  
 where FromDate  between @FromDate and @ToDate and UserID = @UserID  
 end

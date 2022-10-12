@@ -23,7 +23,7 @@ SELECT
       ,[Miscellaneous]    
       ,[TotalAmount]    
       ,ex.CreatedOn        
-  FROM [TimesheetDB].[dbo].[Expense] ex    
+  FROM [dbo].[Expense] ex    
   inner join Registration Reg on reg.RegistrationID = ex.UserID    
   inner join ProjectMaster PM on ex.ProjectID =PM.ProjectID    
   where FromDate  between @FromDate and @ToDate  

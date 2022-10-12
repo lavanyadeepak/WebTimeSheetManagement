@@ -4,5 +4,5 @@ as
 begin
 SELECT 
       [AssignToAdmin]
-  FROM [TimesheetDB].[dbo].[AssignedRoles] where RegistrationID = @UserID
+  FROM [dbo].[AssignedRoles] where RegistrationID = @UserID
 end

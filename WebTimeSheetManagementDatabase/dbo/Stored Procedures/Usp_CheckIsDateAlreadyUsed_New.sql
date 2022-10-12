@@ -6,6 +6,6 @@ as
 begin
 
 SELECT COUNT(1)
-  FROM [TimesheetDB].[dbo].[TimeSheet_New]
+  FROM [dbo].[TimeSheet_New]
   where ToDateTime between @FromDate and @ToDate and UserID =@UserID
 end

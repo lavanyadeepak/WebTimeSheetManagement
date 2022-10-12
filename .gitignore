@@ -38,3 +38,4 @@ $RECYCLE.BIN/
 /WebTimeSheetManagement.Interface/bin/Debug
 /WebTimeSheetManagement.Models/bin/Debug
 /WebTimeSheetManagement/*.user
+/WebTimeSheetManagement/uploads/logs/Log_12-October-2022.txt
